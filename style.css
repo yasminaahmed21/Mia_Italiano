@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.startnav{
+    background-color: white;
+}
+.startcontent{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    align-items: center;
+}
+.startitem {
+    display: flex;
+    padding: 10px;
+}
+.startitem i{
+    color: #ff8400;
+    text-align: center;
+    width: 1.25em;
+    margin-right: .5rem;
+    line-height: 1.4;
+}
+.startitem p{
+    font-family: "Kalam", cursive;
+}
+.endicon i{
+    padding: 10px;
+}
+.endicon i:hover{
+    color: #ff8400;
+}
+
+/*     navbar   */
+
+.navcontainer{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+.navcontainer ul{
+    list-style: none;
+    display: flex;
+}
+.navcontainer ul li{
+    padding: 18px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.logocontainer{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/*     landing container   */
+
+.container{
+    background-image: url(imgs/slide1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+.darkness{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+.content{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 20%;
+    z-index: 2;
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 9rem;
+    font-family: "Leckerli One", cursive;
+    font-style: normal;
+}
+.content p{
+    font-size: 30px;
+    width: 600px;
+    margin: auto;
+    line-height: 2rem;
+    font-weight: 500;
+    font-family: "Kalam", cursive;
+}
+.content a{
+    background-color:#ff8400;
+    padding: 12px;
+    font-size: 15px;
+    line-height: 9rem;  
+    font-family: "Kalam", cursive;
+    cursor: pointer;
+}
+.content a:hover{
+    background-color:#d87204;
+}
+
+/* nextsection to landing page*/
+
+.smalliconcontent{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(206, 203, 203);
+}
+.smalliconcontent .item{
+    padding: 30px;
+    display: flex;
+    position: relative;
+}
+.smalliconcontent .item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color:#ff8400;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.smalliconcontent .item:hover::after{
+     transform: scaleX(1);
+}
+.itemimg{
+    opacity: 0.5;
+    cursor: pointer;
+    margin-right: 25px;
+    position: relative;
+}
+.itemimg:hover{
+    opacity: 1;
+}
+.itemimg img{
+    width: 100px;
+}
+.itemcon h2{
+    font-family: "Kalam", cursive;
+    color:#666;
+    font-size: 18px;
+    width: 120px;
+    line-height: 1.5;
+}
+.itemcon h3{
+    font-family: "Kalam", cursive;
+    color:#949393;
+    font-size: 13px;
+}
+.itemcon img{
+    width: 50px;
+}
+
+/*     about     */
+
+.aboutelement{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.offers{
+    box-sizing: border-box;
+    display: flex;
+}
+.offeritem1{
+    background-image: url(imgs/image2.webp);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 300px;
+}
+.offeritem2{
+    background-image: url(imgs/image1.webp);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 300px;
+}
+.info1{
+    text-align: center;
+    padding: 40px;
+    background: rgb(255 132 0 / 72%);
+    color: #fff;
+    height: 11%;
+}
+.info2{
+    text-align: center;
+    padding: 40px;
+    background: rgba(52, 52, 52, .8);
+    color: #fff;
+    height: 11%;
+}
+.offers span{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.offers h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 18px;
+    letter-spacing: 1.5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.aboutinfo h2{
+    font-family: "Kalam", cursive;
+    color: #343434b3;
+    font-size: 35px;
+    font-weight: 400;
+}
+.pinfo{
+    display: flex;
+    margin-top: 30px;
+}
+.pinfo p{
+    color: #343434b3;;
+    font-family: "Kalam", cursive;
+    width: 450px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.pinfo i{
+    color: #666;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.aboutinfo{
+    position: relative;
+    margin-bottom: 5%;
+}
+.aboutinfo a{
+    background-color:#ff8400;
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    font-family: "Kalam", cursive;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 6%;
+}
+.aboutinfo a:hover{
+    background-color:#d87204;
+}
+
+/* boxesss section after about*/
+
+.boxescontainer{
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.boximg{
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, z-index 0.3s;
+}
+.boximg:hover{
+    transform: scale(1.2);
+    z-index: 12;
+}
+.boximg img{
+   width: 100%;
+   height: 370px;
+   scale: 1.4;
+}
+.dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1; 
+    opacity: 0;
+}
+.boximg:hover .dark{
+    opacity: 1;
+}
+.boxcontent {
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+.boxcontent h2{
+    font-family: "Kalam", cursive;
+    font-size: 30px;
+}
+.boxcontent p{
+    width: 300px;
+    font-size: 13px;
+    font-family: "Kalam", cursive;
+    line-height: 2;
+}
+.boximg:hover .boxcontent {
+    opacity: 1;
+}
+.boximg button {
+    padding: 10px;
+    background-color:#ff8400;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Kalam", cursive;
+    transition: background-color 0.3s ease;
+}
+
+.boximg button:hover {
+    background-color: rgb(226, 126, 4);
+}
+
+
+/*   client   */
+
+.client{
+    margin-top: 5%;
+}
+.clientsall{
+    background-color: #f7f7f7;
+    padding: 50px;
+}
+.clientstart{
+    text-align: center;
+    line-height: 10px;
+    font-family: "Kalam", cursive;
+}
+.clientstart h2{
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #343434;
+}
+.clientstart h3{
+    color: #343434b3;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130px;
+}
+.clientcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.clientcontent i{
+    color: #ff8400;
+    font-size: 40px;
+}
+.clientcontent p{
+    color: #343434b3;;
+    font-family: "Kalam", cursive;
+    font-size: 17px;
+    width: 540px;
+}
+.clientimg{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.clientdata{
+    display: flex;
+    padding: 30px;
+}
+.clinfo{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.clientdata img{
+    border-radius: 50%;
+    width: 80px;
+}
+.clientdata h3{
+    font-family: "Kalam", cursive;
+    color: #343434;
+    font-weight: 400;
+}
+.clientdata p{
+    font-family: "Kalam", cursive;
+    color: #bdbdbd;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/*    recommendation    */
+
+.recommend{
+    margin-top: 5%;
+}
+.recommenditems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.chef{
+    position: relative;
+    width: 24.9%;
+}
+.chef .image{
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+}
+.chef img{
+    width: 100%;
+}
+.image a{
+    background-color: #ff8400;
+    color: white;
+    border: none;
+    font-family: "Kalam", cursive;
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 2;
+}
+.image a:hover{
+    background-color:#d87204;
+}
+.chefcontent{
+    padding: 20px;
+}
+.chefcontent p{
+    font-family: "Kalam", cursive;
+    color: #343434;
+}
+.chefcontent p span{
+    color: #ff8400;
+    font-weight: 700;
+}
+.chefcontent span{
+    color: #bdbdbd;
+    font-family: "Kalam", cursive;
+}
+.chef .image::before{
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 100%);
+    transition: transform 0.6s ease;
+    transform: skewX(25deg);
+}
+.chef .image:hover::before{
+    transform: translateX(290%) skewX(25deg);
+}
+.chef .image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .3s;
+}
+.chef .image:hover::after{
+    opacity: 1;
+}
+
+/*       booking      */
+
+.booking{
+    margin-top: 4%;
+}
+.bookcontent{
+    background-image: url(imgs/book.webp);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.order{
+    padding: 90px;
+}
+.bookcontent h3{
+    color: #ff8400;
+    font-family: "Kalam", cursive;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.bookcontent p{
+    color: #343434;
+    font-size: 19px;
+    font-family: "Kalam", cursive;
+    width: 720px;
+    line-height: 2;
+}
+.bookcontent a{
+    background-color:#ff8400;
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    font-family: "Kalam", cursive;
+    position: absolute;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.bookcontent a:hover{
+    background-color:#d87204;
+}
+
+/*    subscribe   */
+
+.subscribe{
+    background-color: #ff8400;
+}
+.subcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.subcontent{
+    color: white;
+    line-height: 2;
+}
+.subcontent h3{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+.subcontent p{
+    line-height: 1.5;
+    font-family: "Kalam", cursive;
+}
+.sublink input{
+    background-color: #ed7c03;
+    border: none;
+    width: 200px;
+    padding: 15px;
+    outline: 0;
+}
+.sublink input::placeholder{
+    color: white;
+    font-family: "Kalam", cursive;
+    font-size: 16px;
+}
+.sublink a{
+    background-color: white;
+    color: #ff8400;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.sublink a:hover{
+    color:white;
+    background-color: #9f5300;
+}
+
+/*   before footer  */
+
+.beforefooter{
+    background: #9f5300;
+}
+.beforefootercontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    padding: 40px;
+}
+.beforefootercontainer h3{
+    font-family: "Kalam", cursive;
+    font-size: 30px;
+    line-height: 3;
+    font-weight: 400;
+}
+.about p{
+    font-family: "Kalam", cursive;
+    width: 350px;
+}
+.contact i{
+    color: #ff8400;
+    padding: 15px;
+}
+.contact span{
+    font-family: "Kalam", cursive;
+}
+.insta h3{
+    text-align: center;
+}
+.instacon{
+    width: 270px;
+    height: 270px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.instacon img{
+    width: 130px;
+    height: 130px;
+}
+.instacon1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.instacon3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.instacon2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.instacon4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/*   footer   */
+
+.footer{
+    background-color: #472706;;
+}
+.footercontent{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Kalam", cursive;
+}
